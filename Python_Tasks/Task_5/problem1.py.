@@ -1,0 +1,20 @@
+# Problem 1: Find the Runner-Up Score!
+# HackerRank Link: https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+
+    arr = list(set(arr))
+    arr.sort()
+
+    print(arr[-2])
